@@ -105,7 +105,7 @@ def main():
     case = 2
     path = 'Scientific Programmer Assessment data sheet.csv'
     date_object,vol_jojo,vol_left_pool,pump_out = process_data(path,case)
-    tot_pumped = 0.
+    tot_pumped = 0.0
 
     for i in range(len(date_object)):
         value = datetime.datetime.strptime(date_object[i],'%Y-%m-%d').strftime('%Y%m%d')
